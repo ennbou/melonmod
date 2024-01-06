@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct MelonModApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  
+  @State var isAppStarting = true
+  
+  var body: some Scene {
+    WindowGroup {
+      if(isAppStarting){
+        LaunchScreen(isAppStarting: $isAppStarting)
+      }else{
+        ContentView()
+      }
     }
+  }
 }
