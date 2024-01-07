@@ -12,6 +12,10 @@
 		D979DB642B4967F00033E801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D979DB632B4967F00033E801 /* Assets.xcassets */; };
 		D979DB672B4967F00033E801 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D979DB662B4967F00033E801 /* Preview Assets.xcassets */; };
 		D979DB6E2B497B7C0033E801 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979DB6D2B497B7C0033E801 /* LaunchScreen.swift */; };
+		D979DB712B49B8B60033E801 /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979DB702B49B8B60033E801 /* MainNavigation.swift */; };
+		D979DB742B49C1810033E801 /* BottomBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979DB732B49C1810033E801 /* BottomBarItem.swift */; };
+		D979DB762B49C2220033E801 /* MainNavHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979DB752B49C2220033E801 /* MainNavHeader.swift */; };
+		D979DB782B49C8680033E801 /* BottomBarItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979DB772B49C8680033E801 /* BottomBarItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,15 @@
 		D979DB632B4967F00033E801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D979DB662B4967F00033E801 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D979DB6D2B497B7C0033E801 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		D979DB702B49B8B60033E801 /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
+		D979DB732B49C1810033E801 /* BottomBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarItem.swift; sourceTree = "<group>"; };
+		D979DB752B49C2220033E801 /* MainNavHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavHeader.swift; sourceTree = "<group>"; };
+		D979DB772B49C8680033E801 /* BottomBarItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarItemModel.swift; sourceTree = "<group>"; };
+		D979DB802B4B13B20033E801 /* MacMelonModApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacMelonModApp.swift; sourceTree = "<group>"; };
+		D979DB822B4B13B20033E801 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D979DB842B4B13B40033E801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D979DB872B4B13B40033E801 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D979DB892B4B13B40033E801 /* MacMelonMod.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacMelonMod.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				D979DB5E2B4967EF0033E801 /* MelonMod */,
+				D979DB7F2B4B13B20033E801 /* MacMelonMod */,
 				D979DB5D2B4967EF0033E801 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +67,10 @@
 		D979DB5E2B4967EF0033E801 /* MelonMod */ = {
 			isa = PBXGroup;
 			children = (
+				D979DB792B49C8720033E801 /* models */,
+				D979DB722B49C1620033E801 /* views */,
 				D979DB6D2B497B7C0033E801 /* LaunchScreen.swift */,
+				D979DB702B49B8B60033E801 /* MainNavigation.swift */,
 				D979DB5F2B4967EF0033E801 /* MelonModApp.swift */,
 				D979DB612B4967EF0033E801 /* ContentView.swift */,
 				D979DB632B4967F00033E801 /* Assets.xcassets */,
@@ -66,6 +83,43 @@
 			isa = PBXGroup;
 			children = (
 				D979DB662B4967F00033E801 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D979DB722B49C1620033E801 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D979DB732B49C1810033E801 /* BottomBarItem.swift */,
+				D979DB752B49C2220033E801 /* MainNavHeader.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D979DB792B49C8720033E801 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				D979DB772B49C8680033E801 /* BottomBarItemModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		D979DB7F2B4B13B20033E801 /* MacMelonMod */ = {
+			isa = PBXGroup;
+			children = (
+				D979DB802B4B13B20033E801 /* MacMelonModApp.swift */,
+				D979DB822B4B13B20033E801 /* ContentView.swift */,
+				D979DB842B4B13B40033E801 /* Assets.xcassets */,
+				D979DB892B4B13B40033E801 /* MacMelonMod.entitlements */,
+				D979DB862B4B13B40033E801 /* Preview Content */,
+			);
+			path = MacMelonMod;
+			sourceTree = "<group>";
+		};
+		D979DB862B4B13B40033E801 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D979DB872B4B13B40033E801 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -140,9 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D979DB712B49B8B60033E801 /* MainNavigation.swift in Sources */,
 				D979DB622B4967EF0033E801 /* ContentView.swift in Sources */,
+				D979DB742B49C1810033E801 /* BottomBarItem.swift in Sources */,
 				D979DB602B4967EF0033E801 /* MelonModApp.swift in Sources */,
+				D979DB782B49C8680033E801 /* BottomBarItemModel.swift in Sources */,
 				D979DB6E2B497B7C0033E801 /* LaunchScreen.swift in Sources */,
+				D979DB762B49C2220033E801 /* MainNavHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +343,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +374,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
