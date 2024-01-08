@@ -16,6 +16,10 @@
 		D979DB742B49C1810033E801 /* BottomBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979DB732B49C1810033E801 /* BottomBarItem.swift */; };
 		D979DB762B49C2220033E801 /* MainNavHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979DB752B49C2220033E801 /* MainNavHeader.swift */; };
 		D979DB782B49C8680033E801 /* BottomBarItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979DB772B49C8680033E801 /* BottomBarItemModel.swift */; };
+		D979DB8F2B4B21870033E801 /* ModsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979DB8E2B4B21870033E801 /* ModsScreen.swift */; };
+		D979DB922B4C13F80033E801 /* ModModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979DB912B4C13F80033E801 /* ModModel.swift */; };
+		D979DB952B4C152F0033E801 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979DB942B4C152F0033E801 /* CommentView.swift */; };
+		D979DB972B4C166F0033E801 /* ModItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979DB962B4C166F0033E801 /* ModItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		D979DB842B4B13B40033E801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D979DB872B4B13B40033E801 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D979DB892B4B13B40033E801 /* MacMelonMod.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacMelonMod.entitlements; sourceTree = "<group>"; };
+		D979DB8E2B4B21870033E801 /* ModsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModsScreen.swift; sourceTree = "<group>"; };
+		D979DB912B4C13F80033E801 /* ModModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModModel.swift; sourceTree = "<group>"; };
+		D979DB942B4C152F0033E801 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		D979DB962B4C166F0033E801 /* ModItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,7 @@
 		D979DB5E2B4967EF0033E801 /* MelonMod */ = {
 			isa = PBXGroup;
 			children = (
+				D979DB8D2B4B216E0033E801 /* screens */,
 				D979DB792B49C8720033E801 /* models */,
 				D979DB722B49C1620033E801 /* views */,
 				D979DB6D2B497B7C0033E801 /* LaunchScreen.swift */,
@@ -90,6 +99,7 @@
 		D979DB722B49C1620033E801 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				D979DB932B4C150D0033E801 /* mods */,
 				D979DB732B49C1810033E801 /* BottomBarItem.swift */,
 				D979DB752B49C2220033E801 /* MainNavHeader.swift */,
 			);
@@ -100,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D979DB772B49C8680033E801 /* BottomBarItemModel.swift */,
+				D979DB912B4C13F80033E801 /* ModModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -122,6 +133,23 @@
 				D979DB872B4B13B40033E801 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D979DB8D2B4B216E0033E801 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				D979DB8E2B4B21870033E801 /* ModsScreen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		D979DB932B4C150D0033E801 /* mods */ = {
+			isa = PBXGroup;
+			children = (
+				D979DB942B4C152F0033E801 /* CommentView.swift */,
+				D979DB962B4C166F0033E801 /* ModItemView.swift */,
+			);
+			path = mods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +228,10 @@
 				D979DB602B4967EF0033E801 /* MelonModApp.swift in Sources */,
 				D979DB782B49C8680033E801 /* BottomBarItemModel.swift in Sources */,
 				D979DB6E2B497B7C0033E801 /* LaunchScreen.swift in Sources */,
+				D979DB922B4C13F80033E801 /* ModModel.swift in Sources */,
+				D979DB8F2B4B21870033E801 /* ModsScreen.swift in Sources */,
+				D979DB952B4C152F0033E801 /* CommentView.swift in Sources */,
+				D979DB972B4C166F0033E801 /* ModItemView.swift in Sources */,
 				D979DB762B49C2220033E801 /* MainNavHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

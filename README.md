@@ -3,7 +3,7 @@
 
 - [x] Splash Screen
 - [x] Main Navigation
-- [ ] Mods Screen
+- [x] Mods Screen
 - [ ] My Works Screen
 - [ ] Community Screen
 - [ ] Profile Screen

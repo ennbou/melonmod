@@ -21,8 +21,17 @@ struct MainNavigation: View {
         HStack{
           
         }.navigationDestination(for: BottomBarItemModel.self){ item in
-          Text(item.content)
-            .navigationBarBackButtonHidden()
+          VStack{
+            switch item.name{
+            case "Mods": ModsScreen()
+            case "My works": Text(item.content)
+            case "Community": Text(item.content)
+            case "Profile": Text(item.content)
+            case "Settings": Text(item.content)
+            default:
+              EmptyView()
+            }
+          }.navigationBarBackButtonHidden()
         }
       }
       HStack{
